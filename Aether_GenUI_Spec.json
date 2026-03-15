@@ -1,0 +1,23 @@
+{
+  "spec_version": "2026.1",
+  "system": "864z-Aether",
+  "portability": "High (No-Vector Dependent)",
+  "components": [
+    {
+      "id": "revenue_tracker",
+      "type": "metric_card",
+      "data_source": "stripe_mcp",
+      "refresh_rate": "real-time"
+    },
+    {
+      "id": "factory_status",
+      "type": "pipeline_visualizer",
+      "steps": ["Discovery", "Blueprint", "Build", "QA", "Deployed"]
+    },
+    {
+      "id": "vulture_alerts",
+      "type": "notification_feed",
+      "filter": "high_priority_gaps"
+    }
+  ]
+}
